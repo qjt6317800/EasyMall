@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+	namespace一般指定为当前文件的所在包路径+文件名
+	将来在程序中通过[ namespace + id ]定位到执行哪一条SQL语句
+ -->
+<mapper namespace="com.EasyMall.dao.UserMapper">
+    <!-- 通过select、insert、update、delete标签声明要执行的SQL -->
+    <update id="addUser">
+		insert into user values(null,#{username},#{password},#{nickname},#{email})
+	</update>
+    <!--
+    resultType：返回值类型，简单类型（例如：Integer，String，Emp等）
+        如果返回集合(List<Emp>)，只需配置集合中的元素类型即可！
+    resultMap：复杂对象结构（例如多表关联查询等），后面用到再讲解
+     -->
+</mapper>
