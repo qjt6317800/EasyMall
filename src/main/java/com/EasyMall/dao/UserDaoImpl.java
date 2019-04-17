@@ -80,7 +80,7 @@ public class UserDaoImpl implements UserDao {
             ps.setString(1, username);
             rs = ps.executeQuery();
             if(rs.next()==true){
-                User user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),rs.getString("nickname"),rs.getString("email"));
+                User user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),rs.getString("nickname"),rs.getString("email"),rs.getString("role"));
                 return user;
             }
         } catch (Exception e) {
@@ -109,7 +109,7 @@ public class UserDaoImpl implements UserDao {
             rs = ps.executeQuery();
             if(rs.next()==true){
                 if(password.equals(rs.getString("password"))){
-                    User user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),rs.getString("nickname"),rs.getString("email"));
+                    User user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),rs.getString("nickname"),rs.getString("email"),rs.getString("role"));
                     return user;
                 }
             }

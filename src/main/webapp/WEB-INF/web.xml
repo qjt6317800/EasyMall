@@ -55,6 +55,42 @@
         <servlet-name>OrderAddServlet</servlet-name>
         <url-pattern>/servlet/OrderAddServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ProdListByConditionServlet</servlet-name>
+        <servlet-class>com.EasyMall.web.ProdListByConditionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdListByConditionServlet</servlet-name>
+        <url-pattern>/servlet/ProdListByConditionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProdListBySearchServlet</servlet-name>
+        <servlet-class>com.EasyMall.web.ProdListBySearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdListBySearchServlet</servlet-name>
+        <url-pattern>/servlet/ProdListBySearchServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProdImgServlet</servlet-name>
+        <servlet-class>com.EasyMall.web.ProdImgServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdImgServlet</servlet-name>
+        <url-pattern>/servlet/ProdImgServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProdInfoServlet</servlet-name>
+        <servlet-class>com.EasyMall.web.ProdInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProdInfoServlet</servlet-name>
+        <url-pattern>/servlet/ProdInfoServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
     <filter>
         <description>全站乱码过滤器</description>
         <filter-name>EncodingFilter</filter-name>
@@ -73,5 +109,15 @@
         <filter-name>AutologinFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    <filter>
+        <description>权限管理过滤器</description>
+        <filter-name>PrivFilter</filter-name>
+        <filter-class>com.EasyMall.filter.PrivFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PrivFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 
 </web-app>

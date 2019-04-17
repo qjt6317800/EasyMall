@@ -26,12 +26,6 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <!-- ***** C3P0包 ***** -->
-      <dependency>
-          <groupId>c3p0</groupId>
-          <artifactId>c3p0</artifactId>
-          <version>0.9.1.2</version>
-      </dependency>
       <!-- ***** Servlet jar包 ***** -->
     <dependency>
       <groupId>javax.servlet</groupId>

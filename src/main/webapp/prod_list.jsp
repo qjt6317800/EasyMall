@@ -1,4 +1,4 @@
-<%@page import="cn.tedu.bean.User"%>
+<%@page import="com.EasyMall.bean.User"%>
 <%@ page language="java" import="java.util.*" isELIgnored="false" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE HTML>

@@ -25,12 +25,13 @@ import com.EasyMall.utils.WebUtils;
         }
 
         public User(int id, String username, String password, String nickname,
-                    String email) {
+                    String email, String role) {
             this.id = id;
             this.username = username;
             this.password = password;
             this.nickname = nickname;
             this.email = email;
+            this.role = role;
         }
         public String getRole() {
             return role;
